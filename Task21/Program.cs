@@ -1,0 +1,14 @@
+﻿double [] point1 = new double [3];
+double [] point2 = new double [3];
+Console.WriteLine("Введите координаты точки x1: ");
+point1 [0] = Convert.ToInt32(Console.ReadLine()); 
+Console.WriteLine("Введите координаты точки y1: ");
+point1 [1] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты точки z1: ");
+point1 [2] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты точки x2: ");
+point2 [0] = Convert.ToInt32(Console.ReadLine()); 
+Console.WriteLine("Введите координаты точки y2: ");
+point2 [1] = Convert.ToInt32(Console.ReadLine()); 
+double length = Math.Sqrt(Math.Pow(point2[0] - point1[0],2) + Math.Pow(point2[1] - point1[1],2));
+Console.WriteLine(length);
